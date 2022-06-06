@@ -1,32 +1,116 @@
-import React, {MouseEvent} from 'react';
+import React, {MouseEvent, useState} from 'react';
 import './App.css';
-import {Button} from './components/button'
 
-// Second microtask
-// Task 3-----------
+//Forth microtask---------------------------
+
+type FilterType = 'all' | 'dollars' | 'rubles'
 
 function App() {
-    const Button1Foo = (subscriber: string, age: number) => {
-        console.log(subscriber, age)
-    }
-    const Button2Foo = (subscriber: string, age: number) => {
-        console.log(subscriber, age)
-    }
-    const Button3Foo = () => {
-        console.log('Im stupid button')
+    const [money, setMoney] = useState([
+        {banknots: 'Dollars', value: 100, number: ' a1234567890'},
+        {banknots: 'Dollars', value: 50, number: ' z1234567890'},
+        {banknots: 'RUBLS', value: 100, number: ' w1234567890'},
+        {banknots: 'Dollars', value: 100, number: ' e1234567890'},
+        {banknots: 'Dollars', value: 50, number: ' c1234567890'},
+        {banknots: 'RUBLS', value: 100, number: ' r1234567890'},
+        {banknots: 'Dollars', value: 50, number: ' x1234567890'},
+        {banknots: 'RUBLS', value: 50, number: ' v1234567890'},
+    ])
+
+    const [filter, setFilter] = useState<FilterType>('all')
+
+    let currentMoney = money;
+    if (filter === 'rubles') {
+        currentMoney = money.filter((filteredMoney) => filteredMoney.banknots === 'RUBLS')
+    } else if (filter === 'dollars') {
+        currentMoney = money.filter((filteredMoney) => filteredMoney.banknots === 'Dollars')
     }
 
+
+    const onClickFilterHandler = (nameButton: FilterType) => {
+        setFilter(nameButton)
+    }
     return (
-        <div className={'App'}>
-            <Button name={'myYoutubeChannel-1'} callBack={()=>Button1Foo('Vasya', 21)}/>
-            <Button name={'myYoutubeChannel-2'} callBack={()=>Button2Foo('Ivan', 34)}/>
-            <Button name={'myYoutubeChannel-3'} callBack={Button3Foo}/>
-        </div>
+        <>
+            <ul>
+                {currentMoney.map((objFromMoneyArr, index) => {
+                    return (
+                        <li key={index}>
+                            <span> {objFromMoneyArr.banknots}</span>
+                            <span> {objFromMoneyArr.value}</span>
+                            <span> {objFromMoneyArr.number}</span>
+                        </li>
+                    )
+                })}
+            </ul>
+            <div style={{marginLeft: '35px'}}>
+                <button onClick={() => onClickFilterHandler('all')}>All</button>
+                <button onClick={() => onClickFilterHandler('rubles')}>Rubles</button>
+                <button onClick={() => onClickFilterHandler('dollars')}>Dollars</button>
+            </div>
+        </>
     );
 }
 
+
 export default App;
 
+
+//Third microtask
+
+
+// function App() {
+//     // let a = 1
+//     let [a, setA] = useState(1)
+//
+//     const onClickHandler = () => {
+//         setA(++a)
+//
+//     }
+//     const onClickHandlerNull = () => {
+//         setA(a = 0)
+//
+//     }
+//     return (
+//         <div className="App">
+//             <h1>
+//                 {a}
+//             </h1>
+//             <button onClick={onClickHandler}>number</button>
+//             <button onClick={onClickHandlerNull}>0</button>
+//         </div>
+//     );
+// }
+//
+//
+// export default App;
+
+
+// Second microtask
+// Task 3-----------
+//import {Button} from './components/button'
+// function App() {
+//     const Button1Foo = (subscriber: string, age: number) => {
+//         console.log(subscriber, age)
+//     }
+//     const Button2Foo = (subscriber: string, age: number) => {
+//         console.log(subscriber, age)
+//     }
+//     const Button3Foo = () => {
+//         console.log('Im stupid button')
+//     }
+//
+//     return (
+//         <div className={'App'}>
+//             <Button name={'myYoutubeChannel-1'} callBack={()=>Button1Foo('Vasya', 21)}/>
+//             <Button name={'myYoutubeChannel-2'} callBack={()=>Button2Foo('Ivan', 34)}/>
+//             <Button name={'myYoutubeChannel-3'} callBack={Button3Foo}/>
+//         </div>
+//     );
+// }
+//
+// export default App;
+//
 
 // Task 2-----------------
 // function App() {
