@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bab2214d-1ff9-45bb-8018-3715f69133fa" name="Changes" comment="second">
+    <list default="true" id="bab2214d-1ff9-45bb-8018-3715f69133fa" name="Changes" comment="input - forth microtask">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +12,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="second" />
+        <entry key="$PROJECT_DIR$" value="third" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,19 +26,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/itincubator/ignat",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "D:\\itincubator\\microtasks\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/itincubator/microtasks&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\itincubator\\microtasks\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\itincubator\microtasks\src\components" />
@@ -56,15 +55,18 @@
       <workItem from="1653480199002" duration="9000" />
       <workItem from="1653480221076" duration="8844000" />
       <workItem from="1653491248277" duration="42000" />
-      <workItem from="1653491334720" duration="821000" />
-      <workItem from="1653641568155" duration="16842000" />
+      <workItem from="1654519464295" duration="625000" />
+      <workItem from="1654529114695" duration="2199000" />
+      <workItem from="1654531746335" duration="14000" />
+      <workItem from="1654532001048" duration="1874000" />
+      <workItem from="1654539727747" duration="58000" />
     </task>
-    <task id="LOCAL-00001" summary="second">
-      <created>1653491488285</created>
+    <task id="LOCAL-00001" summary="input - forth microtask">
+      <created>1654519411086</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1653491488285</updated>
+      <updated>1654519411086</updated>
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
@@ -83,7 +85,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="second" />
+                        <option value="origin/third" />
                       </list>
                     </value>
                   </entry>
@@ -97,19 +99,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
-    <MESSAGE value="second" />
-    <option name="LAST_COMMIT_MESSAGE" value="second" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/App.tsx</url>
-          <line>29</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="input - forth microtask" />
+    <option name="LAST_COMMIT_MESSAGE" value="input - forth microtask" />
   </component>
 </project>
